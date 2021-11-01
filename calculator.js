@@ -1,7 +1,7 @@
 var calc = "";
 function equals(){
-    if(calc == "08/27/1999"){
-        calc = "Fuck You";
+    if(calc == "01/26/2000"){
+        calc = "Alexis B-Day";
         document.getElementById("calculation").innerHTML = calc;
     }
     else{
