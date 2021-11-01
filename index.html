@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="calculator.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .box {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+            padding: 20px;
+            font-family: Impact;
+            overflow: hidden;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: -moz-none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        .calculator {
+            background-color: white;
+            height: 300px;
+            width: 250px;
+            margin: auto;
+            margin-top: 30px;
+            border: 8px solid black;
+        }
+        .screen {
+            width: 230px;
+            height: 70px;
+            background-color: rgb(0, 0, 0);
+            margin: auto;
+            margin-top: 2px;
+            border: 3px solid rgb(60, 67, 85);
+            position: relative;
+            top: 5px;
+            text-align: center;
+            line-height: 2.2;
+            font-size: xx-large;
+            color: white;
+            overflow: hidden;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: -moz-none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        .numbers {
+            width: 150px;
+            height: 200px;
+            background-color:black;
+            margin-top: 13.5px;
+            margin-left: 8px; 
+            
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+        .number {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            text-align: center;
+            margin: 5px;
+            line-height: 1.25;
+            font-size: xx-large;
+            font-family: Impact;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: -moz-none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        .symbols {
+            width: 77px;
+            height: 200px;
+            background-color: black;
+            position: relative;
+            top: -205px;
+            left: 165px;
+        }
+        .symbol {
+            width: 65px;
+            height: 43.75px;
+            background-color: white;
+            margin: 5px;
+            position: relative;
+            top: 5px;
+            left: 1.25px;
+            text-align: center;
+            line-height: .92;
+            font-size: xxx-large;
+            font-family: Impact;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: -moz-none;
+            -o-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(71, 119, 250);">
+    <div class="box">
+       Adam's Calculator
+    </div>
+    <div class= "calculator">
+        <div onclick="clears();" style="cursor: pointer;" class= "screen" id="calculation"></div>
+        <div class= "numbers">
+            <div class= "row">
+                <div onclick="seven();" style="cursor: pointer;" class= "number">7</div>
+                <div onclick="eight();" style="cursor: pointer;" class= "number">8</div>
+                <div onclick="nine();" style="cursor: pointer;" class= "number">9</div>
+            </div>
+            <div class= "row">
+                <div onclick="four();" style="cursor: pointer;" class= "number">4</div>
+                <div onclick="five();" style="cursor: pointer;" class= "number">5</div>
+                <div onclick="six();" style="cursor: pointer;" class= "number">6</div>
+            </div>
+            <div class= "row">
+                <div onclick="one();" style="cursor: pointer;" class= "number">1</div>
+                <div onclick="two();" style="cursor: pointer;" class= "number">2</div>
+                <div onclick="three();" style="cursor: pointer;" class= "number">3</div>
+            </div>
+            <div class= "row">
+                <div onclick="zero();" style="cursor: pointer;" class= "number">0</div>
+                <div onclick="dot();" style="cursor: pointer;" class= "number">.</div>
+                <div onclick="equals();" style="cursor: pointer;" class= "number">=</div>
+            </div>
+        </div>
+        <div class= "symbols">
+            <div onclick="divide();" style="cursor: pointer;" class= "symbol"> &divide; </div>
+            <div onclick="multiply();" style="cursor: pointer;" class= "symbol"> &times; </div>
+            <div onclick="minus();" style="cursor: pointer;" class= "symbol"> &minus; </div>
+            <div onclick="plus();" style="cursor: pointer;" class= "symbol"> &plus; </div>
+        </div>
+    </div>
+</body>
+</html>
